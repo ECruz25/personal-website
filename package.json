@@ -1,0 +1,20 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "scripts.js",
+  "dependencies": {
+    "live-server": "^1.2.0"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.2"
+  },
+  "scripts": {
+    "watch-stylus": "stylus -w style.styl",
+    "run-dev": "live-server",
+    "start": "npm-run-all -p watch-stylus run-dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

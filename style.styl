@@ -1,0 +1,48 @@
+primary = #ff0047
+secondary = #04A4CC
+bg-color = #333333
+bg-color-light = rgb(52,51,51)
+font-color = white
+
+body
+  background-color: bg-color-light
+  font-family: "Roboto"
+  color: font-color
+  padding: 0 15vw
+  margin: 0
+
+.header 
+  background: bg-color
+  color: white
+  top: 0
+  width: 100%
+  &-content
+    display: flex
+    justify-content: space-between
+    align-items: center
+    flex-wrap: wrap
+
+.main-nav
+  width: 33% 
+  justify-self: end    
+  color: white
+  > ul
+    display: flex
+    flex-wrap: wrap
+    padding: 0
+    justify-content: space-between
+    list-style: none
+    > li
+      display: inline-block
+      > a
+        color: @color
+        text-decoration: none
+        font-weight: bold
+        &:hover
+          color: primary
+
+main
+  margin: 4rem auto
+  
+.title
+  color: primary

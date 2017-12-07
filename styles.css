@@ -1,0 +1,30 @@
+body {
+  font-family: "Roboto";
+  font-size: 20px;
+  margin: 0;
+  background-color: var(--bg-color-light);
+  color: white;
+}
+.navbar {
+  display: grid;
+  grid-template-columns: 100px auto repeat(2, 100px);
+  grid-gap: 10px;
+  grid-auto-rows: auto;
+  text-align: center;
+  list-style-type: none;
+  background: var(--bg-color);
+}
+.navbar-item {
+  border: solid 1px black;
+}
+.navbar-item:nth-child(1) {
+  grid-column: 2;
+}
+.navbar-item a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+.navbar-item a:hover {
+  color: var(--main-color);
+}
